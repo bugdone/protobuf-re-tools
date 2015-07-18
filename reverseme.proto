@@ -1,0 +1,10 @@
+package com.example.reverseme;
+
+message SomeData {
+	message OtherData {
+		required int32 test = 1 [default = 1];
+	}
+
+	required OtherData data = 1;
+	optional string comment = 2;
+}
